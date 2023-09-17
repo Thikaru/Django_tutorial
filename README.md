@@ -1,8 +1,9 @@
 # Django Docker Template
 
+## このリポジトリを使うための初期設定について
+
 ```
 mkdir backend
-
 ```
 
 1. このプロジェクトをクローンする．
@@ -11,6 +12,8 @@ mkdir backend
 4. その後初めての場合は Django のプロジェクトがないのでコンテナを起動しながらプロジェクトを作成する「docker-compose run web django-admin.py startproject <作成したいプロジェクト名> .」を行う．それ以外で作成後の起動もしくは backend に Djangp プロジェクトを持っていく場合は「docker-compose up」でコンテナを起動する
 5. djangopj/settings.py を開き下の記述する内容のように DB の設定を変更する
 6. アクセスできるかを確認する．
+7. docker compose exec web python3 manage.py migrate DB にマイグレートする
+8. http://localhost:8000/
 
 ```
 DATABASES = {
@@ -26,14 +29,12 @@ DATABASES = {
 
 ```
 
-## dev
-
-### Set up
+## Set up
 
 ```bash
-# build
+# build これでビルドしてから実行するのがいい
 docker compose build
-# up
+# up 動かす時は大体これを実行する
 docker compose up
 ## remote container ##
 
