@@ -249,5 +249,3 @@ backend/：Dockerで今回開発に使用できるディレクトリ一般的に
 - [MTV という考え方](https://qiita.com/kotayanagi/items/01e9a617571e2b9526bc)
 - [MVC・MTV アーキテクチャ・モデル設計思想の解説](https://di-acc2.com/programming/python/546/)
 - [基礎から学 Django 開発 ①](https://kosa3.medium.com/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6django%E9%96%8B%E7%99%BA%E2%91%A0-14066e174ef4)
-- []()
-- []()
